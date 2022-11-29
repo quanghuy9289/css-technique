@@ -1,0 +1,41 @@
+// media query breakpoints (Sass map)
+$breakpoint: (
+	'small':	36rem,
+	'medium': 50rem,
+	'large':	64rem
+);
+
+/*
+responsive breakpoint mixin:
+@include respond('medium') { ... }
+*/
+@mixin respond($bp) {
+  @media (min-width: map-get($breakpoint, $bp)) {
+    @content;
+  }
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+
+  @include respond('medium') {
+    width: 40em;
+  }
+}
+
+#menu {
+  width: 100%;
+
+  @include respond('small') {
+    width: 20rem;
+  }
+
+  @include respond('medium') {
+    width: 30rem;
+  }
+
+  @include respond('large') {
+    width: 40rem;
+  }
+}

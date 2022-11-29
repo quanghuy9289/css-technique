@@ -1,0 +1,25 @@
+// inline SVG icons
+@mixin icon($name) {
+  .#{$name}::before {
+    background-image: inline('#{$name}.svg');
+  }
+}
+
+.icon, .icon::before {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon::before {
+  content: '';
+  width: 1.6em;
+  height: 1.6em;
+  font-weight: normal;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+@include icon(email);
+@include icon(rss);
+@include icon(twitter);

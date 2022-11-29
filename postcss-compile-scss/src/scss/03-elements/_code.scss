@@ -1,0 +1,14 @@
+pre, code {
+  font-family: $font-code;
+  font-size: inherit;
+  line-height: $lineheight-code;
+  color: $color-code-fore;
+  background-color: $color-code-back;
+  border: 1px solid $color-code-bord;
+}
+
+pre code {
+  color: inherit;
+  background-color: inherit;
+  border: 0 none;
+}
