@@ -1,0 +1,17 @@
+@mixin theme($theme: DarkGray) {
+    background: $theme;
+    box-shadow: 2px 2px 2px rgba($theme, .25);
+    color: #fff;
+}
+
+.info {
+    @include theme;
+}
+
+.alert {
+    @include theme($theme: DarkRed);
+}
+
+.success {
+    @include theme($theme: DarkGreen);
+}

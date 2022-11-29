@@ -1,0 +1,20 @@
+{
+  "name": "postcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postcss:dev": "postcss ./app/styles/main.css --output ./public/styles.css --env development --watch --verbose",
+    "postcss:build": "postcss ./app/styles/main.css --output ./public/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "cssnano": "^5.1.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.0.0"
+  }
+}

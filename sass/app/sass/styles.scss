@@ -1,0 +1,6 @@
+@use 'base';
+
+.invert {
+    background-color: base.$primary-color;
+    color: white;
+}

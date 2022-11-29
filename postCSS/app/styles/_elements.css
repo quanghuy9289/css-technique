@@ -1,0 +1,14 @@
+/* element style */
+body {
+  font-family: "sans-serif";
+}
+
+label {
+  user-select: none;
+}
+
+input {
+  width: 250px;
+  height: 20px;
+  padding: 2px;
+}
